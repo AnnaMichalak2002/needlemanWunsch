@@ -30,11 +30,11 @@ To run this project, ensure that you have Python 3.12.0 installed on your system
 4. **Run the Script**: To execute the main script, type the following command:
 
     ```bash
-    python script.py python script.py example.fasta
+    python script.py example.fasta
     ```
     or
     ```bash
-    python script.py python script.py example2.fasta
+    python script.py example2.fasta
     ```
 
 5. **Expected output**:
