@@ -48,7 +48,7 @@ else:
                 insert = score_matrix[i][j - 1] + gap_penalty
                 score_matrix[i][j] = max(match, delete, insert)
 
-        # Calculating the path and the optimal alignment.
+        # Calculating the path and the optimal alignment - "traceback".
         alignment1, alignment2 = [], []
         i, j = n, m
         while i > 0 and j > 0:
@@ -83,7 +83,7 @@ else:
 
     sequences = load_fasta(fasta_path)
     if len(sequences) != 2:
-        print("Plik fasta powinien zawierać 2 sekwencje.")
+        print("Fasta file should contain 2 sequneces.")
     else:
         alignment1, alignment2 = needleman_wunsch(sequences[0], sequences[1])
 
