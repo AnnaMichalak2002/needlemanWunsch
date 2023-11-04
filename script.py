@@ -5,7 +5,7 @@ if len(sys.argv) != 2:
 else:
     fasta_path = sys.argv[1]
 
-    match_score=2
+    match_score=1
     mismatch_penalty=-1
     gap_penalty=-2
 
